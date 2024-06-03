@@ -1,0 +1,137 @@
+body {
+    background-color: #222; /* Culoare de fundal a paginii */
+    color: #fff; /* Culoare text */
+}
+
+.container {
+    max-width: 600px; /* Lățimea maximă a containerului */
+    margin: 0 auto; /* Centrare pe orizontală */
+    padding: 20px; /* Spațiu interior */
+    text-align: center; /* Alineare text în centru */
+}
+
+h1 {
+    font-size: 24px; /* Dimensiunea fontului pentru titlu */
+    margin-bottom: 20px; /* Spațiu de margini de dedesubtul titlului */
+}
+
+#summonerSearch {
+    display: flex; /* Utilizează flexbox */
+    flex-direction: column; /* Direcția de afișare a elementelor: vertical */
+    align-items: center; /* Alineare elemente în centru pe orizontală */
+    gap: 10px; /* Spațiu între elementele flex */
+}
+
+input[type="text"] {
+    width: calc(100% - 30px); /* Lățimea câmpului de text */
+    padding: 10px; /* Spațiu interior */
+    border: 1px solid #ccc; /* Stil de bordură */
+    border-radius: 5px; /* Raza de rotație a marginilor */
+    background-color: #333; /* Culoare de fundal a câmpului de text */
+    color: #fff; /* Culoare text */
+}
+
+button {
+    width: calc(100% - 30px); /* Lățimea butonului */
+    padding: 10px; /* Spațiu interior */
+    background-color: #007bff; /* Culoare de fundal a butonului */
+    color: #fff; /* Culoare text */
+    border: none; /* Fără bordură */
+    border-radius: 5px; /* Raza de rotație a marginilor */
+    cursor: pointer; /* Cursor de tip pointer */
+}
+
+button:hover {
+    background-color: #0056b3; /* Culoare de fundal a butonului la hover */
+}
+
+#playerInfo {
+    margin-top: 20px; /* Spațiu de margini de deasupra containerului cu informații despre jucător */
+    background-color: #333; /* Culoare de fundal a containerului cu informații despre jucător */
+    padding: 10px; /* Spațiu interior */
+    border-radius: 5px; /* Raza de rotație a marginilor */
+}
+
+#playerInfo p {
+    color: #fff; /* Culoare text */
+}
+
+#playerInfo img {
+    max-width: 100px; /* Lățimea maximă a imaginii */
+    height: auto; /* Înălțime automată */
+    border-radius: 50%; /* Forma circulară a imaginii */
+    margin-bottom: 10px; /* Spațiu de margini de dedesubtul imaginii */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fontul folosit pentru text */
+}
+
+.container {
+    max-width: 400px; /* Lățimea maximă a containerului */
+    margin: 100px auto; /* Margini pentru centrare verticală */
+    padding: 20px; /* Spațiu interior */
+    text-align: center; /* Alineare text în centru */
+    border-radius: 10px; /* Raza de rotație a marginilor */
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5); /* Umbra containerului */
+}
+
+h1 {
+    font-size: 28px; /* Dimensiunea fontului pentru titlu */
+    margin-bottom: 20px; /* Spațiu de margini de dedesubtul titlului */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 30px); /* Lățimea câmpurilor de email și parolă */
+    padding: 15px; /* Spațiu interior */
+    margin-bottom: 20px; /* Spațiu de margini */
+    border: 2px solid #007bff; /* Stil de bordură */
+    border-radius: 5px; /* Raza de rotație a marginilor */
+    background-color: #333; /* Culoare de fundal */
+    color: #fff; /* Culoare text */
+    outline: none; /* Fără contur la focus */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #0056b3; /* Culoare bordură la focus */
+}
+
+button {
+    width: calc(100% - 30px); /* Lățimea butonului */
+    padding: 15px; /* Spațiu interior */
+    background-color: #007bff; /* Culoare de fundal */
+    color: #fff; /* Culoare text */
+    border: none; /* Fără bordură */
+    border-radius: 5px; /* Raza de rotație a marginilor */
+    cursor: pointer; /* Cursor de tip pointer */
+    transition: background-color 0.3s ease; /* Tranziție pentru schimbarea culorii de fundal */
+}
+
+button:hover {
+    background-color: #0056b3; /* Culoare de fundal a butonului la hover */
+}
+
+a {
+    color: #ffffff; /* Culoare text */
+    text-decoration: none; /* Fără subliniere */
+}
+
+a:hover {
+    text-decoration: underline; /* Subliniere la hover */
+}
+
+/* Fundal animat */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    animation: backgroundAnimation 20s ease infinite; /* Animare a containerului */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Gradient liniar */
+    background-size: 400% 400%; /* Dimensiunea de fundal a gradientului */
+}
+

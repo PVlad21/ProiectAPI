@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Se specifică setările generale ale documentului -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Se specifică iconurile pentru diferite platforme -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!-- Se setează titlul paginii -->
+    <title>Register</title>
+    <!-- Se adaugă fișierul CSS pentru stilizare -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Se importă scripturile pentru autentificare și configurarea Firebase -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="register.js"></script>
+</head>
+<body>
+    <!-- Conținutul principal al paginii -->
+    <div class="container">
+        <!-- Titlul paginii -->
+        <h1>Register</h1>
+        <!-- Formularul de înregistrare -->
+        <div id="registerForm">
+            <!-- Câmp pentru introducerea adresei de email -->
+            <input type="email" id="email" placeholder="Email">
+            <!-- Câmp pentru introducerea parolei -->
+            <input type="password" id="password" placeholder="Password">
+            <!-- Butonul de înregistrare -->
+            <button id="registerButton">Register</button>
+        </div>
+        <!-- Link către pagina de login -->
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Setarea codificării caracterelor și a scalării pentru dispozitive mobile -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linkuri către imagini pentru iconițe și manifestul aplicației web -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- Titlul paginii și linkul către fișierul CSS -->
+    <title>League of Legends Player Search</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Scripturi JavaScript pentru autentificare și configurarea Firebase -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="auth.js"></script>
+</head>
+<body>
+    <!-- Container principal pentru conținutul paginii -->
+    <div class="container" id="mainContent" style="display:none;">
+        <!-- Antetul principal al paginii -->
+        <h1>League of Legends Player Search</h1>
+
+        <!-- Formularul de căutare a jucătorului și butonul de căutare -->
+        <div id="summonerSearch">
+            <input type="text" id="gameName" placeholder="Enter Game Name">
+            <input type="text" id="tagLine" placeholder="Enter Tag Line">
+            <button id="searchButton" onclick="searchSummoner()">Search</button>
+        </div>
+
+        <!-- Div-ul pentru afișarea informațiilor despre jucător -->
+        <div id="playerInfo"></div>
+    </div>
+
+    <!-- Scriptul JavaScript pentru funcționalitățile specifice paginii -->
+    <script src="script.js"></script>
+</body>
+</html>
